@@ -1,6 +1,6 @@
 angular.module('EmailApp', [
-  'ngRoute'
-]).config(function ( $routeProvider ) {
+  require('ngRoute'
+)]).config(function ( $routeProvider ) {
   'use strict';
   $routeProvider
     .when('/inbox', {
@@ -11,3 +11,5 @@ angular.module('EmailApp', [
       redirectTo: '/inbox'
     });
 });
+
+angular.module('myApp', [require('angular-route')]);
